@@ -1,57 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root{
     --black: #171717;
-    --purple: #6100FF;
+    --black100: #777777;
 }
 
-.roboto{
-    font-family: 'Roboto Mono', monospace;
+.monospace{
+    font-family: 'Space Mono', monospace;
 }
 
 .righteous{
     font-family: 'Righteous', cursive;
 }
 
+.montserrat{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.opacity5{
+    opacity: .5;
+}
+
+.opacity7{
+    opacity: .7;
+}
 
 
 
 body{
-    background-color: var(--black);
+    background-color: black;
     color: white;
+    padding: 10px;
 }
 
 .global_cointainer{
     background-color: var(--black);
+    border-radius: 16px;
     width: 100%;
-    height: 100vh;
 }
 
-.hero_section{
-    color: rgb(77, 77, 77);
+.header_nav{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    padding: 4px 20px;
+}
+
+.hero_container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.title{
+    color: white;
     font-family: 'Righteous', cursive;
-    font-size: 300px;
+    font-size: 230px;
+    line-height: 180px;
+    width: 800px;
     font-weight: 1000;
-    border-top: rgba(255, 255, 255, .7);
 }
 
-.hero_section::before,.hero_section::after{
-    content: " ";
-    display: block;
-    background: #181818;
-    height: 2px;
-    width: 100%;
+.offsetText{
+    margin-left: 270px;
+    color: var(--black100);
+}
+
+.disclaimer{
+    width: 300px;
+    font-size: 14px;
+    margin-top: 70px;
+    color: var(--black100);
+}
+
+#matrix_hero{
     position: absolute;
-    left: 0;
-    z-index: 0;
+    width: 600px;
+    right: 5%;
+    top: 10%;
+    opacity: .03;
 }
 
-.colorized{
-    color: var(--purple);
-    background-image: linear-gradient(30deg, #4c1dce 40%, #7b43fd 80%, #4470ff 100%);
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.tagsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 48px 32px;
+}
+
+.tagCtrl{
+    border: solid 2px var(--black100);
+    color: var(--black100);
+    padding: 4px 16px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 0px 4px;
+}
+
+#lineGesture{
+    margin: 0px 4px;
+    filter: invert(43%) sepia(1%) saturate(3251%) hue-rotate(27deg) brightness(106%) contrast(72%);
+}
+
+.rowPhrase{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+#timesGesture{
+    width: 20px;
+    opacity: .2;
 }
