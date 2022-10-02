@@ -1,11 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Mono:wght@300;400;600;700&display=swap');
 
 :root{
     --black: #171717;
+    --purple: #6100FF;
 }
+
+.roboto{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.righteous{
+    font-family: 'Righteous', cursive;
+}
+
+
+
 
 body{
     background-color: var(--black);
+    color: white;
 }
 
 .global_cointainer{
@@ -15,8 +30,28 @@ body{
 }
 
 .hero_section{
-    color: white;
-    font-family: 'Major Mono Display', monospace;
-    font-size: 90px;
-    font-weight: 900;
+    color: rgb(77, 77, 77);
+    font-family: 'Righteous', cursive;
+    font-size: 300px;
+    font-weight: 1000;
+    border-top: rgba(255, 255, 255, .7);
+}
+
+.hero_section::before,.hero_section::after{
+    content: " ";
+    display: block;
+    background: #181818;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+
+.colorized{
+    color: var(--purple);
+    background-image: linear-gradient(30deg, #4c1dce 40%, #7b43fd 80%, #4470ff 100%);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
