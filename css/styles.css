@@ -8,6 +8,10 @@
     --black100: #777777;
 }
 
+html{
+    font-size: 16px;
+}
+
 .monospace{
     font-family: 'Space Mono', monospace;
 }
@@ -34,6 +38,9 @@ body{
     background-color: black;
     color: white;
     padding: 10px;
+    /* border: white solid 1px; */
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
 }
 
 .global_cointainer{
@@ -44,30 +51,29 @@ body{
 
 .header_nav{
     display: flex;
-    width: 100%;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    height: 40px;
-    padding: 4px 20px;
+    font-size: 13px;
+    padding: 16px 30px;
 }
 
 .hero_container{
     display: flex;
-    width: 100%;
     flex-direction: row;
     justify-content: flex-start;
-    padding: 40px;
     border-radius: 8px;
+    /* border: yellowgreen solid 1px; */
+    flex-wrap: wrap;
+    padding: 16px 40px;
 }
 
 .title{
     color: white;
     font-family: 'Righteous', cursive;
-    font-size: 230px;
-    line-height: 180px;
-    width: 800px;
-    font-weight: 1000;
+    font-size: 14.37rem;
+    line-height: 81%;
+    /* border: solid red 1px; */
 }
 
 .offsetText{
@@ -77,9 +83,11 @@ body{
 
 .disclaimer{
     width: 300px;
-    font-size: 14px;
+    font-size: 17px;
     margin-top: 70px;
     color: var(--black100);
+    position: absolute;
+    right: 15%;
 }
 
 #matrix_hero{
@@ -96,6 +104,7 @@ body{
     justify-content: flex-start;
     align-items: center;
     padding: 48px 32px;
+    /* border: solid yellow 1px; */
 }
 
 .tagCtrl{
@@ -117,10 +126,30 @@ body{
     color: white;
     font-size: 30px;
     padding: 20px 30px;
-    width: 100%;
+    /* border: greenyellow solid 1px; */
 }
 
 #timesGesture{
     width: 20px;
     opacity: .2;
+}
+
+.blockRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 40px;
+}
+
+.questionCtrl{
+    font-size: 2.81rem;
+    opacity: .3;
+}
+
+.itemListCtrl{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px;
 }
