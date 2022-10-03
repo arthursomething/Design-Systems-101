@@ -6,6 +6,7 @@
 :root{
     --black: #171717;
     --black100: #777777;
+    --greenish: #ddfe65;
 }
 
 html{
@@ -47,6 +48,11 @@ body{
     background-color: var(--black);
     border-radius: 16px;
     width: 100%;
+    background-image: url(../assets/noise.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* filter: brightness(110%); */
 }
 
 .header_nav{
@@ -61,59 +67,101 @@ body{
 .hero_container{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     border-radius: 8px;
     /* border: yellowgreen solid 1px; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 16px 40px;
 }
+
 
 .title{
     color: white;
     font-family: 'Righteous', cursive;
-    font-size: 14.37rem;
+    font-size: 14rem;
     line-height: 81%;
     /* border: solid red 1px; */
+    /* padding: 90px 0px 90px 60px; */
+    width: 60%;
+    padding-top: 90px;
+    padding-left: 60px;
+    padding-bottom: 30px;
 }
 
 .offsetText{
-    margin-left: 270px;
     color: var(--black100);
+    position: relative;
+    left: 28%;
+}
+
+.smallGesture{
+    width: 40px;
+    margin-right: 4px;
+    opacity: .1;
+}
+
+.disclaimerContainer{
+    margin-top: 90px;
+    position: absolute;
+    right: 15%;
+    width: 400px;
+    /* border: solid red 1px; */
+}
+
+.starsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .disclaimer{
-    width: 300px;
-    font-size: 17px;
-    margin-top: 70px;
+    font-size: 22px;
     color: var(--black100);
-    position: absolute;
-    right: 15%;
+    /* border: solid red 1px; */
+    padding-top: 20px;
+    color: var(--greenish);
 }
 
 #matrix_hero{
     position: absolute;
-    width: 600px;
-    right: 5%;
+    width: 900px;
+    right: 14%;
     top: 10%;
-    opacity: .03;
+    opacity: .02;
 }
 
+#matrix_hero2{
+    position: absolute;
+    width: 300px;
+    right: 14%;
+    top: 10%;
+    opacity: .8;
+}
+
+#smallCube{
+    width: 40px;
+    margin-right: 8px;
+}
 .tagsContainer{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 48px 32px;
+    padding: 18px 12px;
     /* border: solid yellow 1px; */
+    padding-left: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
 }
 
 .tagCtrl{
     border: solid 2px var(--black100);
     color: var(--black100);
     padding: 4px 16px;
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 20px;
-    margin: 0px 4px;
+    margin: 4px 4px;
 }
 
 #lineGesture{
@@ -122,6 +170,10 @@ body{
 }
 
 .rowPhrase{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: black;
     color: white;
     font-size: 30px;
