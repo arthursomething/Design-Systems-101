@@ -219,14 +219,13 @@ body{
     flex-direction: row;
     justify-content: center;
     /* border: solid red 1px; */
-    padding: 40px 40px;
+    padding: 180px 40px;
     gap: 90px;
-    padding-top: 80px;
 }
 
 .questionCtrl{
     font-size: 2.81rem;
-    opacity: .3;
+    opacity: .7;
     width: 900px;
     /* border: solid yellow 1px; */
 }
@@ -238,6 +237,7 @@ body{
     align-items: flex-start;
     width: 400px;
     gap: 16px;
+    color: var(--greenish);
     /* border: solid orange 1px; */
 }
 
@@ -248,9 +248,49 @@ body{
     align-items: center;
     z-index: 1;
     gap: 8px;
-    transition: all .9s ease;
+    transition: all .8s ease;
+}
+
+.material-symbols-outlined{
+    transition: all .4s ease;
 }
 
 .listItem:hover{
-    color: var(--greenish);
+    color: white;
+}
+
+.listItem:hover > .material-symbols-outlined{
+    transform: scale(130%);
+}
+
+.bigBlockCtrl{
+    padding: 0px 60px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+#titleContent{
+    font-size: 8rem;
+}
+
+#descriptionContent{
+    max-width: 800px;
+    padding-left: 60px;
+    opacity: .6;
+}
+
+.iconCtrl{
+    background-color: var(--greenish);
+    width: 400px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.gifContentCtrl{
+    width: 190px;
 }
