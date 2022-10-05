@@ -54,16 +54,47 @@ body{
     top: 16%;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
-    box-shadow: 0px 20px 30px 20px rgba(0,0,0,.5);
+    box-shadow: 0px 20px 30px 20px rgba(0,0,0,.2);
     /* opacity: .2;
     filter: blur(10px); */
-    transition: all .6s ease;
+    z-index: 2;
 }
 
-.squareFloating:hover{
-    filter: blur(10px);
-    box-shadow: 0px 10px 15px 10px rgba(0,0,0,.5);
+#square001{
+    left: 20%;
+    top: 36%;
 }
+
+#square002{
+    left: 60%;
+    top: 66%;
+}
+
+#square003{
+    left: 90%;
+    top: 16%;
+}
+
+#square004{
+    left: 90%;
+    top: 116%;
+}
+
+#square005{
+    left: 9%;
+    top: 125%;
+}
+
+#square006{
+    left: 29%;
+    top: 155%;
+}
+
+/* .squareFloating:hover{
+    /* filter: blur(10px); 
+    background-color: var(--greenish);
+    box-shadow: 0px 10px 15px 10px rgba(0,0,0,.5);
+} */
 
 .global_cointainer{
     background-color: var(--black);
@@ -285,6 +316,7 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
+    padding-top: 40px;
 }
 
 .iconCtrl{
@@ -318,4 +350,13 @@ body{
     color: var(--black);
     border-radius: 16px;
     padding: 1px 8px 1px 10px;
+}
+
+.subjectsCtrl{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+   padding: 16px 16px; 
 }
