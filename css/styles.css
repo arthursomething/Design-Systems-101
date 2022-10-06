@@ -5,7 +5,7 @@
 
 :root{
     --black: #171717;
-    --black100: #777777;
+    --black100: #aeaeae;
     --greenish: #ddfe65;
 }
 
@@ -41,8 +41,8 @@ body{
     padding: 10px;
     /* border: white solid 1px; */
     /* overflow-x: scroll;
-    overflow-y: hidden; */
-    cursor: pointer;
+    overflow-y: hidden; 
+    cursor: pointer;*/
 }
 
 .squareFloating{
@@ -231,11 +231,12 @@ body{
     background-color: black;
     padding: 20px 60px;
     /* border: greenyellow solid 1px; */
+    margin-top: 60px;
 }
 
 .timesGesture{
     width: 60px;
-    opacity: .2;
+    opacity: .7;
     filter: grayscale(100%);
     transform: scale(100%);
     transition: all .4s ease;
@@ -296,14 +297,15 @@ body{
 }
 
 .bigBlockCtrl{
-    padding: 0px 60px;
+    padding: 6px 60px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 40px;
+    gap: 40px;
 }
 
 #titleContent{
     font-size: 8rem;
+    line-height: 7rem;
 }
 
 #descriptionContent{
@@ -370,3 +372,94 @@ body{
     transform: scale(120%);
     color: var(--greenish);
 }
+
+.divider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.vLineCtrl{
+    width: 1px;
+    height: 190px;
+    border-radius: 90px;
+    background-color: var(--black100);
+    opacity: .1;
+}
+
+.paddingTop{
+    padding-top: 90px;
+}
+
+.paddingBottom{
+    padding-bottom: 90px;
+}
+
+.avatarCtrl{
+    width: 200px;
+    border-radius: 100%;
+}
+
+.aboutSectCtrl{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px 90px;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding-top: 60px;
+}
+
+#intro{
+    font-size: 30px;
+    max-width: 400px;
+}
+
+#detail{
+    max-width: 600px;
+    opacity: .5;
+}
+  .iconMedia{
+    color: white;
+    fill: var(--greenish);
+    width: 20px;
+  }
+
+  .flexCollumn{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .cardMediaLink{
+    color: var(--black100);
+    background-color: black;
+    padding: 8px 18px;
+    text-decoration: none;
+    font-size: 12px;
+    max-width: 160px;
+    border-radius: 4px;
+    height: 20px;
+    transition: all ease .4s;
+    box-shadow: 0px 6px 10px rgba(0,0,0,.5);
+  }
+
+  .cardMediaLink div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .cardMediaLink:hover{
+    transform: scale(120%);
+    box-shadow: 0px 12px 15px rgba(0,0,0,.2);
+  }
