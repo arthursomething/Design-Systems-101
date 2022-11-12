@@ -6,7 +6,8 @@
 :root{
     --black: #171717;
     --black100: #aeaeae;
-    --greenish: #ddfe65;
+    --purply: #8665fc;
+    --pinky: #c065fc;
 }
 
 html{
@@ -93,7 +94,7 @@ body{
 
 /* .squareFloating:hover{
     /* filter: blur(10px); 
-    background-color: var(--greenish);
+    background-color: var(--purply);
     box-shadow: 0px 10px 15px 10px rgba(0,0,0,.5);
 } */
 
@@ -171,10 +172,13 @@ body{
 
 .disclaimer{
     font-size: 22px;
-    color: var(--black100);
     /* border: solid red 1px; */
     padding-top: 20px;
-    color: var(--greenish);
+    /* color: var(--purply); */
+    background-image: linear-gradient(to right bottom, var(--purply),var(--pinky));
+    background-clip: text;
+    -webkit-background-clip: text;
+color: transparent;
 }
 
 #matrix_hero{
@@ -226,12 +230,14 @@ body{
 .rowPhrase{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     background-color: black;
-    padding: 20px 60px;
+    padding: 20px 40px;
     /* border: greenyellow solid 1px; */
     margin-top: 60px;
+    gap: 26px;
 }
 
 .timesGesture{
@@ -270,8 +276,12 @@ body{
     align-items: flex-start;
     width: 400px;
     gap: 16px;
-    color: var(--greenish);
+    /* color: var(--purply); */
     /* border: solid orange 1px; */
+    background-image: linear-gradient(to right bottom, var(--purply),var(--pinky));
+    background-clip: text;
+    -webkit-background-clip: text;
+color: transparent;
 }
 
 .listItem{
@@ -319,18 +329,23 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
     padding-top: 40px;
 }
 
 .iconCtrl{
     background-color: rgb(62, 62, 62);
     width: 400px;
+    height: 100px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 30px 0px;
+    margin-top: 20px;
+
 }
 
 .gifContentCtrl{
@@ -349,10 +364,13 @@ body{
     font-size: 1.2rem;
 }
 .tagTimeCtrl{
-    background-color: var(--greenish) ;
-    color: var(--black);
+    background-color: var(--purply) ;
+    background-image: linear-gradient(to right bottom, var(--purply),var(--pinky));
+    
+    color: white;
     border-radius: 16px;
     padding: 1px 8px 1px 10px;
+    font-weight: bold;
 }
 
 .subjectsCtrl{
@@ -370,7 +388,7 @@ body{
 
 .subjectsCtrl span:hover{
     transform: scale(120%);
-    color: var(--greenish);
+    color: var(--purply);
 }
 
 .divider{
@@ -399,7 +417,8 @@ body{
 
 .avatarCtrl{
     width: 200px;
-    border-radius: 100%;
+    height: auto;
+    /* border-radius: 100%; */
 }
 
 .aboutSectCtrl{
@@ -429,7 +448,7 @@ body{
 }
   .iconMedia{
     color: white;
-    fill: var(--greenish);
+    fill: var(--purply);
     width: 20px;
   }
 
@@ -479,8 +498,11 @@ body{
     padding: 16px 60px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: stretch;
+    /* border: solid red 1px; */
     gap:40px;
 }
 
@@ -491,7 +513,7 @@ body{
     font-size: 1.3rem;
     gap: 12px;
     max-width: 500px;
-    color: var(--greenish);
+    color: var(--purply);
 }
 
 .containerCtrl .descTypeCtrl{
